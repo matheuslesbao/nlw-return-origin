@@ -1,0 +1,68 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #00856F ;
+    --secondary-color: #DCE9E2 ;
+    
+
+    --headline: #212529;
+    --paragraph: #495057 ;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    width: 37.5rem;
+    margin: auto;
+    margin-top: 4.1rem;
+}
+header h1 {
+    font-size: 3.0rem ;
+    line-height: 130%;
+    color: var(--headline);
+
+    margin-bottom: 2.4rem;
+}
+header h4 {
+    color: var(--headline);
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+header p {
+    font-size: 1.8rem;
+    color: var(--paragraph);
+    font-weight: 400;
+
+    margin-bottom: 3.2rem;
+}
+
+/* Btn whatsapp */
+header .btn-whatsapp {
+    height: 6.2rem;
+    width: 26.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #FFFFFF;
+    background: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+    border-radius: 4rem;
+    border: none;
+
+    padding: 12px 20px;
+    margin: auto;
+    margin-bottom: 6.0rem;
+    gap: 1.6rem;
+}

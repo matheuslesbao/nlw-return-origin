@@ -13,7 +13,7 @@
 
   --brand-beige: #fffaf1;
 
-  --brand-green-hover: #00453a;
+  --brand-button-hover: #00453a;
 
   --headline: #212529;
   --paragraph: #495057;
@@ -256,13 +256,11 @@ body.menu-expanded button path {
 }
 
 /* Btn whatsapp */
-#home .btn-whatsapp {
-  height: 6.2rem;
-  width: 26.3rem;
-
+.btn-whatsapp {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
 
   color: #ffffff;
   background: var(--primary-color);
@@ -272,13 +270,19 @@ body.menu-expanded button path {
   border-radius: 4rem;
   border: none;
 
-  padding: 12px 20px;
+  padding: 1.6rem 3.2rem;
   margin: auto;
   margin-bottom: 6rem;
+
   gap: 1.6rem;
+  text-transform: uppercase;
+  transition: background 200ms;
 }
-#home .btn-whatsapp a {
+.btn-whatsapp a {
   color: var(--light-color);
+}
+.btn-whatsapp:hover {
+  background-color: var(--brand-button-hover);
 }
 
 article.stats {
@@ -343,4 +347,71 @@ article.stats {
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
+}
+/* ============ Contact =========== */
+#contact {
+  text-align: left;
+}
+#contact header {
+  margin-bottom: 3.2rem;
+}
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+/* Btn-whatsapp contact */
+#contact .btn-whatsapp {
+  margin-top: 1.2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding-block: 6rem;
+
+  text-align: left;
+
+  color: white;
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+footer .logo svg {
+  width: 23.6rem;
+  height: 3.1rem;
+}
+footer .logo path {
+  fill: white;
+}
+footer p {
+  color: var(--brand-beige);
+  line-height: 2;
+  margin-bottom: 3.2rem;
+}
+footer .social-links {
+  text-align: left;
+  justify-content: flex-start;
+}
+/* ============ Back to Top =========== */
+#backToTopButton {
+  position: fixed;
+  bottom: 3rem;
+  right: 2.9rem;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
 }

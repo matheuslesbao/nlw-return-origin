@@ -1,4 +1,4 @@
-//Menu fixed
+//Menu fixed Scroll
 addEventListener('scroll', () => {
   if (scrollY > 10) {
     navigation.classList.add('scroll')
@@ -6,6 +6,16 @@ addEventListener('scroll', () => {
     navigation.classList.remove('scroll')
   }
 })
+// Mostrar Button para voltar para o home
+//
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 500) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+addEventListener('scroll', showBackToTopButtonOnScroll)
 // Evento de Click no menu
 // let bodyMenu = document.getElementById('bodyMenu')
 let btnMenuMobile = document.querySelector('.open-menu')

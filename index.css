@@ -53,11 +53,37 @@ ul {
 a {
   text-decoration: none;
 }
-
+img {
+  max-width: 100%;
+}
 section {
   padding-block: 10rem;
 }
+/* Alteração global das h4 e h2 de todas as section header */
+section header h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
 
+  text-transform: uppercase;
+  color: var(--primary-color);
+
+  margin-bottom: 1.6rem;
+}
+
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: var(--headline);
+}
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  color: var(--paragraph);
+}
 /* ============ Navigation =========== */
 nav {
   display: flex;
@@ -185,7 +211,7 @@ body.menu-expanded button path {
 }
 
 /* ============ Header =========== */
-header#home ::before {
+#home ::before {
   content: '';
   display: block;
   width: 100%;
@@ -209,11 +235,10 @@ header#home ::before {
 }
 #home h4 {
   color: var(--primary-color);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 150%;
   font-weight: 700;
 
-  margin-top: 1rem;
   margin-bottom: 1.6rem;
 }
 #home p {
@@ -285,23 +310,7 @@ article.stats {
 }
 
 /* ============ Services =========== */
-#services header h4 {
-  font-size: 1.4rem;
-  line-height: 2.1;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
-
-  color: var(--primary-color);
-
-  margin-bottom: 1.6rem;
-}
-
 #services header h2 {
-  font-size: 3rem;
-  line-height: 2.1rem;
-
-  color: var(--headline);
-
   margin-bottom: 6rem;
 }
 #services .cards {
@@ -322,4 +331,16 @@ article.stats {
 
 #services .card h3 {
   margin-block: 1.6rem;
+}
+/* ============ About =========== */
+#about {
+  text-align: left;
+  background-color: var(--brand-beige);
+}
+#about header h2 {
+  margin-bottom: 2.4rem;
+}
+#about .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
 }

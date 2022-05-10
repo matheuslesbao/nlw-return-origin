@@ -24,14 +24,21 @@ function closeMenu() {
 }
 btnMenuMobileClose.addEventListener('click', closeMenu)
 
+// ScrollReveal
+
 ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 3000
+  duration: 2000
 }).reveal(`
   #home,
-  #home img,
   #services,
   #services header,
-  #services .card,
+  #about,
   `)
+
+ScrollReveal({
+  origin: 'left',
+  distance: '40px',
+  duration: 2000
+}).reveal(`#home img,#services .card, #about img`)

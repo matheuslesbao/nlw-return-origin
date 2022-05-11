@@ -84,6 +84,32 @@ section .content p {
 
   color: var(--paragraph);
 }
+/* ======== Custom Colors ================ */
+#services .card circle {
+  fill: var(--light-color);
+}
+#backToTopButton circle {
+  fill: var(--primary-color);
+}
+#contact li path {
+  stroke: var(--primary-color);
+}
+/* #Navigation .logo {
+  color: white;
+} */
+/* Color of Menu */
+#navigation button.open-menu path {
+  stroke: var(--primary-color);
+}
+#navigation.scroll button.open-menu path {
+  stroke: white;
+  color: white;
+}
+body.menu-expanded#navigation .logo path,
+#navigation.scroll .logo path {
+  fill: white;
+  color: white;
+}
 /* ============ Navigation =========== */
 nav {
   display: flex;
@@ -105,12 +131,12 @@ nav.scroll {
 
   opacity: 0.9;
 }
-nav.scroll .logo path {
+/* nav.scroll .logo path {
   fill: #ffffff;
-}
-nav.scroll button path {
+} */
+/* nav.scroll button path {
   stroke: white;
-}
+} */
 nav button {
   background: none;
   border: none;
@@ -190,6 +216,14 @@ body.menu-expanded .menu {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  transition: 400ms;
+}
+.menu .button:hover {
+  background-color: var(--brand-button-hover);
+  color: white;
+
+  filter: brightness(1.1);
 }
 .social-links {
   display: flex;
@@ -409,9 +443,14 @@ footer .social-links {
 
   opacity: 0;
   visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
 }
 
 #backToTopButton.show {
   opacity: 1;
   visibility: visible;
+
+  transform: translateY(0);
 }
